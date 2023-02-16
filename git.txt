@@ -1,0 +1,33 @@
+上网gitee
+ssh-keygen -t rsa -C "1516843243@qq.com"      联机
+ssh-keygen -t rsa -C "ok325721700@126.com"   
+
+
+cat ~/.ssh/id_rsa.pub    生成  key 到码云端验证公钥
+git config --global user.name ''1516843243@qq.com啊啊啊''
+git config --global user.email ''1516843243@qq.com''
+--------------------------------------------------------------------------------
+在git本地文件夹 d:\xiami\xiamitest
+克隆到本地
+pull ---ok325721700(ssh-keygen -t rsa -C "ok325721700@xx.com"      联机)
+git clone git@gitee.com:okhelloxm/wordpress.git 下载（  从网上复制） 也可以直接下载
+*************分支工作
+网上创建分支atestz名
+在当地，切换进入(网上拖下来的atest目录下-线上线下同为atest名)
+cd atest
+git pull（拖下创建的分支信息）
+（看一下 工作目录）
+切换到git checkout atestz(分支名）
+在test目录下创建和修改文件
+--------------------------------------------------------------------------------
+上载
+git add .
+git commit -m "说明一下"
+回到主分支
+git checkout master
+刚才的内容 添加在主分支上
+git merge
+(不台明白是否加atest)
+git merge atest 项目的名称
+接下来，拖到线上 就Ok了
+git push
