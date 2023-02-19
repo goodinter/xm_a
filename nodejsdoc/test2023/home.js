@@ -1,42 +1,38 @@
-// https://www.bilibili.com/video/BV16f4y1U7oT?p=10 精华
-// const { fstat } = require('fs');
 const http = require('http');
 const fs = require('fs');
+const path = require('path');
+const url = require('url');
+
+// let common = require('./modules/common');
 const common = require('./module/common.js');
-http.createServer(function (req, res) {
-        // http://localhost:8081/login.html
-        // http://localhost:8081/index.html
-// 1,获取地址
-let pathname=req.url;
-pathname=pathname=='/'?'/index.html':pathname;
-// 可以获取后缀名path.extname()
-let extname=path.extname(pathname);
-// 2,通过fs模块读取文件
-if(pathname!='/favicon.ico'){
-    fstat.readFile('./static'+pathname,(err,data)=>{
-        if(err){
 
-            res.writeHead(404,{'Content-Type':'text/html;charset="utf-8"'});
-            res.end('404这个页面布存在');
-        }
-    })
-}
+http.createServer((req, res) => {
 
-      res.writeHead(200, {'Content-Type': 'text/html;charset="utf-8"'});
-     
-      res.end('data');
-    }).listen(8081);
-    
-    console.log('Server running at http://127.0.0.1:8081/');
+    let pathName = req.url; // 获取到请求的url
 
-    // ---------express------------
-    const express =require('express')
-// const fs =express('fs');
-const app = express();
-app.get('/contact',(req,res)=>{
-    res.send('22221111');
-});
+    pathName = url.parse(pathName).pathname; // 使用url内置模块获取路径名
+    pathName = pathName !== '/' ? pathName : '/index.html' // 获取到/就默认为/index.html
 
-app.listen(3000,()=>{
- console.log('server in running at http://localhost:3000');
-});
+    let extname = path.extname(pathName);  // 使用内部模块path获取文件后缀名
+
+    if (pathName !== "/favicon.ico") {
+        fs.readFile(path.join(__dirname, './static') + pathName, (err, data) => {
+            // 使用path根据当前路劲获得读取文件的相对路径
+            if (err) {
+                res.writeHead(404, {
+                    "Content-Type": "text/html;charset=UTF-8"
+                });
+                res.end('404这个网页不存在');
+            }
+            let mime = common.getMime(extname);  // 使用自定义模块根据后缀名获取Content-Type的值
+
+            res.writeHead(200, {
+                "Content-Type": "" + mime + ";charset=UTF-8"
+            });
+            res.end(data);
+        })
+    }
+
+}).listen(3000);
+
+console.log("Server runing at http://127.0.0.1:3000");

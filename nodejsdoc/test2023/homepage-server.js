@@ -22,7 +22,10 @@ if(pathname!='/favicon.ico'){
         }
     })
 }
-     let mime = common.getMime(extname);
+     // let mime = common.getMime(extname);
+      let mime = common.getMime(extname)
+     // res.writeHead(200, { 'Content-Type': '"+mime+";charset="utf-8"' });
+     //        res.end(data);
       res.writeHead(200, {'Content-Type': ''+mime+';charset="utf-8"'});
      
       res.end('data');
@@ -30,3 +33,7 @@ if(pathname!='/favicon.ico'){
     
     console.log('Server running at http://127.0.0.1:3000/');
 
+// let extname = path.extname(extname)
+// let mime = common.getMime(extname)
+// res.writeHead(200, { 'Content-Type': '"+mime+";charset="utf-8"' });
+//             res.end(data);

@@ -1,5 +1,7 @@
 
 https://blog.csdn.net/h18377528386/article/details/123426092
+视频学习
+https://www.bilibili.com/video/BV16f4y1U7oT/?p=11&spm_id_from=pageDriver&vd_source=1d8d79dd052d165a3d1bc560b59b5a0a
 node服务器搭建
 node服务器搭建流程
 1，创建一个空文件夹，用来存放项目。
