@@ -1,0 +1,80 @@
+
+					/* #parent{ */
+						/* 固定位置 */
+							/* width: 500px;
+							height: 500px;
+						
+							top: 100px;
+							left: 100px;
+							position: relative; */
+						/* } */
+				/* 手机两列图标排 */
+				img{					
+					   border-radius: 10px 10px 10px 10px ;
+					            background: #eee;
+					            padding: 2px; 
+					            width: 100px;
+					            height: 100px;
+								margin: 13px;
+								border: 1px solid #f8f8f8;
+				}
+			/* 横排换行 */
+				/* ul{
+					display: flex;flex-direction: row;justify-content: space-around;flex-wrap: wrap;
+				} */
+				/* account区域剧中 */
+				.account {
+				border-radius: 10px;
+				width: 400px;
+				height: 350px;
+				border: 1px solid #dddddd;
+				box-shadow: 5px 5px 5px #aaa;
+				box-shadow: 5px 5px 5px #000000;
+				box-shadow: 5px 5px 5px #ccc;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 200px;
+				padding: 20px 40px;
+
+			}
+
+			.account h1 {
+				text-align: center;
+				margin-top: 10px;
+			} 
+/* 		
+			cag.cag_img{
+				width: 60px;height: 60px;  border-radius: 7px 7px 7px 7px;
+			border: 1px solid#f8f8f8;
+
+			} */
+/* .subnav fl{
+	display: flex;flex-wrap:wrap;justify-content:center;align-content:flex-start;margin-left:auto;margin-right:auto;
+
+} */
+
+li{
+	
+      /*去除li的点*/
+      list-style-type: none;
+}
+		
+.goods_name{
+                    
+	/* font-style: normal;
+	/*缩进*/
+/* text-indent: 0px; */
+
+	/* font-size: x-large;  */
+	/*加初*/
+	font-weight: bold;
+	font-family: '隶书';
+margin-left: 35px;
+	text-align: center;
+	/*垂直居中*/
+	vertical-align: middle;
+	line-height: 30px;
+	background-color: #F5F5F5;
+	height: 30px;
+	/*字体装饰*/
+	text-decoration: underline green;}

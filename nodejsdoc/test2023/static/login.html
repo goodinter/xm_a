@@ -1,0 +1,122 @@
+{% extends 'layout.html' %}
+
+{% block content  %}
+<div id=content>
+ 
+{% load static %}
+
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css" />
+  
+    <!-- <link rel="stylesheet" href="{% static 'plugins/bootstrap-3.4.1-dist/css/bootstrap.css' %}"> -->
+    <style>
+        .account {
+            width: 400px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 5px 5px 20px #aaa;
+
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+            padding: 20px 40px;
+        }
+
+        .account h2 {
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+    <!-- <div class="account"> -->
+        <!-- <h2>用户登录</h2>
+        <form method="post" novalidate>
+            {% csrf_token %}
+            <div class="form-group">
+                <label>用户名</label>
+                {{userregedit.username}}
+                <span style="color:red;">{{userregedit.username.errors.0}}</span>
+                ##与下一行不配套
+                <div class="col has-feedback">
+                    <input class="form-control" placeholder="不少于4个字符" type="text" data-val="true" data-val-length="长度要求 4-30 个字符 (2-15 个中文)" data-val-length-max="30" data-val-length-min="2" data-val-nospace="登录用户名不能包含空格" data-val-remote="&#x27;登录用户名&#x27; is invalid." data-val-remote-additionalfields="*.LoginName,*.Email" data-val-remote-type="Post" data-val-remote-url="/account/checkloginname" data-val-required="请输入登录用户名" id="LoginName" name="LoginName" value="" />
+                    <span class="invalid-feedback field-validation-valid" data-valmsg-for="LoginName" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>密码</label>
+                {{userregedit.password}}
+                <span style="color:red;">{{userregedit.password.errors.0}}</span>
+                #与下一行不配套
+                <div class="form-group form-row">
+                    <div class="col-sm-2 control-label w5-2">
+                        <label for="Password">密码</label>
+                    </div>
+                    <div class="col has-feedback">
+                        <input class="form-control" placeholder="至少8位，并包含字母、数字和特殊字符中的两种" type="password" data-val="true" data-val-length="密码长度要求 8-50 位" data-val-length-max="50" data-val-length-min="8" data-val-nospace="密码不能包含空格" data-val-password-complexity="至少包含字母、数字和特殊字符中的两种，只允许半角符号" data-val-regex="密码不能包含全角字符或中文" data-val-regex-pattern="^((?![^\x00-\xff]).)*$" data-val-required="请输入密码" id="Password" name="Password" />
+                        <span class="invalid-feedback field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                    </div>
+                </div>
+
+            </div>
+            <input type="submit" class="btn btn-default" value="登 录">
+            <td>
+                <a class="btn btn-primary btn-xs" href="/regedit/">注册 </a>
+                <a class="btn btn-danger btn-xs" href="/regedit/{{obj.id}}/delete/">忘记密码 </a>
+              </td>
+        </form> -->
+    <!-- </div> -->
+    <!-- -------------- -->
+<div class="account">
+    <h2>用户登录</h2>    
+        <!-- {% for field in form %} -->
+        <!-- {% endfor %} -->
+    <form method="post" action="/index/" >
+        <!-- novalidate 不必验证 novalidate> -->
+
+        {% csrf_token %}
+
+        <div class="form-group">
+            <label>用户名</label>
+            {{ form.username }}
+            <span style="color:red;">{{form.username.errors.0}}</span>
+            <input type="text" class="form-control" placeholder="用户名">
+        </div>
+        
+        <div class="form-group">
+            <label>密码</label>
+            {{ form.password }}
+            <span style="color:red;">{{form.username.errors.0}}</span>
+            <input type="text" class="form-control" placeholder="密码">
+        </div>
+        
+        <input type="submit" value="登录" class="btn btn-primary">
+    </form>
+</div>
+   
+        
+       
+         
+        
+        
+        
+         
+        
+
+
+</div>
+{% endblock %}
+
+      <style>
+                  .top{  list-style-type: none;
+      /* padding: 10px;
+      margin-left: 10px; */
+      /* justify-content: flex-start; */
+      position: fixed;
+      z-index: 1000;
+      background-color: #ccc;} 
+                </style> 

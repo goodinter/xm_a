@@ -1,0 +1,60 @@
+.header {
+    background-color: cornflowerblue;
+    padding: 29px;
+    text-align: -webkit-center;
+}
+
+p {
+    color: #d0a22d;
+    font-size: large;
+}
+
+body {
+    padding: 15px;
+    border: 2px solid #ddd;
+    background-image: url(photo/1723.jpg);
+/* 	background-size:100% 100% ;
+	background-attachment: fixed" */
+}
+
+video[Attributes] {
+    height: 200px;
+}
+
+a {
+    color: white;
+    font: "楷体";
+    font-size: large;
+}
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    width: 190px;
+    height: 200px;
+}
+
+/*
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}*/
+iframe {
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 350px;
+    
+
+	}
+tr{display: flex;
+	content: none;
+}	

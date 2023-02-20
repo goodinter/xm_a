@@ -1,0 +1,43 @@
+ {
+  "message":[ 
+          {
+          "name":"分类",
+          "image_src":"https://pic5.40017.cn/01/001/cf/f6/rBLkBVp0IB-ARCPJAAKRqsCY21E518_320x160_00.jpg",
+          "open_type":"switchTab",
+          "navigator_url":"/pages/categery/main"
+
+
+        },
+        {
+          "name":"秒杀1",
+          "image_src":"https://pic5.40017.cn/01/001/cf/f6/rBLkBVp0IB-AfevzAAKQm68EeKQ361_320x160_00.jpg"
+        },
+        {
+          "name":"秒杀2",
+          "image_src":"https://pic5.40017.cn/01/001/cf/f6/rBLkBVp0IB-ARCPJAAKRqsCY21E518_320x160_00.jpg"
+        },
+        {
+          "name":"秒杀3",
+          "image_src":"https://pic5.40017.cn/01/001/cf/f6/rBLkBVp0IB-AfevzAAKQm68EeKQ361_320x160_00.jpg"
+        },
+        {
+          "name":"秒杀4",
+          "image_src":"https://pic5.40017.cn/01/001/cf/f6/rBLkBVp0IB-ARCPJAAKRqsCY21E518_320x160_00.jpg"
+        },
+        {
+          "name":"秒杀5",
+          "image_src":"https://pic5.40017.cn/01/001/cf/f6/rBLkBVp0IB-AfevzAAKQm68EeKQ361_320x160_00.jpg"
+        },
+        {
+          "name":"秒杀6",
+          "image_src":"https://pic5.40017.cn/01/001/cf/f6/rBLkBVp0IB-ARCPJAAKRqsCY21E518_320x160_00.jpg"
+        },
+        {
+          "name":"秒杀7",
+          "image_src":"https://pic5.40017.cn/01/001/cf/f6/rBLkBVp0IB-AfevzAAKQm68EeKQ361_320x160_00.jpg"
+        }
+        
+  ],
+  "meta":{"msg":"成功","status":200}
+}  
+     

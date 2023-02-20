@@ -1,0 +1,56 @@
+ {
+  "message":[ 
+   { "floor_title": {
+          
+          "name":"时尚女装" ,         
+          "image_src":"https://pic5.40017.cn/02/000/33/66/rBLkCFs0Tr6AXiFPAABmgwDtp7o002_280x190_00.jpg",
+        
+        },
+        "product_list":[
+          {        
+       
+          "name":"优质服务",
+           "image_src":"https://pic5.40017.cn/02/000/33/66/rBLkCFs0Tr6AXiFPAABmgwDtp7o002_280x190_00.jpg",
+          "image_width":"222",
+          "navigator_url":"",
+
+        }, {        
+       
+          "name":"春季热门",
+          "image_src":"https://pic5.40017.cn/02/000/33/66/rBLkCFs0Tr6AXiFPAABmgwDtp7o002_280x190_00.jpg",
+          "image_width":"223",
+          "navigator_url":"",
+
+        },
+         {        
+       
+          "name":"夏季热扔",
+          "image_src":"https://pic5.40017.cn/02/000/33/66/rBLkCFs0Tr6AXiFPAABmgwDtp7o002_280x190_00.jpg",
+           "open_type":"",
+          "image_width":"224",
+          "navigator_url":"",
+
+        },
+         {        
+       
+          "name":"冬季HH",
+          "image_src":"https://pic5.40017.cn/02/000/33/66/rBLkCFs0Tr6AXiFPAABmgwDtp7o002_280x190_00.jpg",
+           "open_type":"",
+          "image_width":"225",
+          "navigator_url":"",
+
+        },
+        {        
+       
+          "name":"冬季HH",
+          "imgUrl":"https://pic5.40017.cn/02/000/f8/b9/rBLkCFsWfOSAKWiGAABRaPAf0aA516_280x190_00.jpg",
+           "open_type":"",
+          "image_width":"226",
+          "navigator_url":"",
+
+        }      
+
+        ]}      
+  
+  ]
+     }

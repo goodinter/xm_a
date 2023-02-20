@@ -1,0 +1,340 @@
+{
+	"message":[ 
+			{
+			"cat_id":1,
+			"cat_name":"大家电1",
+			"cat_pid":1,
+			"cat_level":1,
+			"cat_deleted":false,
+			"cat_icon":"",
+			"children":[
+				{
+					"cat_id":1,
+					"cat_name":"电源1",
+					"cat_pid":1,
+					"cat_level":1,
+					"cat_deleted":false,
+					"cat_icon":"",
+					"children":[
+						{
+							"cat_id":1,
+							"cat_name":"层电1",
+							"cat_pid":1,
+							"cat_level":1,
+							"cat_deleted":false,
+							"cat_icon":"./static/images/m1.jpg"
+						}
+					]
+				}
+
+			]  
+  
+		  },
+		  {
+			"cat_id":1,
+			"cat_name":"大家电2",
+			"cat_pid":1,
+			"cat_level":1,
+			"cat_deleted":false,
+			"cat_icon":"",
+			"children":[
+				{
+					"cat_id":1,
+					"cat_name":"电源2",
+					"cat_pid":1,
+					"cat_level":1,
+					"cat_deleted":false,
+					"cat_icon":"",
+					"children":[
+						{
+							"cat_id":1,
+							"cat_name":"层电2",
+							"cat_pid":1,
+							"cat_level":1,
+							"cat_deleted":false,
+							"cat_icon":"./static/images/m2.jpg"
+					
+						}
+					]
+				}
+
+
+			]
+
+
+  
+  
+		  },
+		  {
+			"cat_id":1,
+			"cat_name":"大家电3",
+			"cat_pid":1,
+			"cat_level":1,
+			"cat_deleted":false,
+			"cat_icon":"",
+			"children":[
+				{
+					"cat_id":1,
+					"cat_name":"电源3",
+					"cat_pid":1,
+					"cat_level":1,
+					"cat_deleted":false,
+					"cat_icon":"",
+					"children":[
+						{
+							"cat_id":1,
+							"cat_name":"层电3",
+							"cat_pid":1,
+							"cat_level":1,
+							"cat_deleted":false,
+							"cat_icon":"./static/images/m3.jpg"
+						}
+					]
+				}
+
+
+			]
+
+
+  
+  
+		  },
+		  {
+			"cat_id":1,
+			"cat_name":"大家电4",
+			"cat_pid":1,
+			"cat_level":1,
+			"cat_deleted":false,
+			"cat_icon":"",
+			"children":[
+				{
+					"cat_id":1,
+					"cat_name":"电源4",
+					"cat_pid":1,
+					"cat_level":1,
+					"cat_deleted":false,
+					"cat_icon":"",
+					"children":[
+						{
+							"cat_id":1,
+							"cat_name":"层电4",
+							"cat_pid":1,
+							"cat_level":1,
+							"cat_deleted":false,
+							"cat_icon":"./static/images/m4.jpg"
+						}
+					]
+				}
+
+
+			] 
+  
+		  },
+		  {
+			"cat_id":1,
+			"cat_name":"大家电6",
+			"cat_pid":1,
+			"cat_level":1,
+			"cat_deleted":false,
+			"cat_icon":"",
+			"children":[
+				{
+					"cat_id":1,
+					"cat_name":"电源6",
+					"cat_pid":1,
+					"cat_level":1,
+					"cat_deleted":false,
+					"cat_icon":"",
+					"children":[
+						{
+							"cat_id":1,
+							"cat_name":"3层电6",
+							"cat_pid":1,
+							"cat_level":1,
+							"cat_deleted":false,
+							"cat_icon":"./static/images/m6.jpg"
+						}
+					]
+				}
+
+
+			]
+
+
+  
+  
+		  },
+		  {
+			"cat_id":1,
+			"cat_name":"大家电7",
+			"cat_pid":1,
+			"cat_level":1,
+			"cat_deleted":false,
+			"cat_icon":"",
+			"children":[
+				{
+					"cat_id":1,
+					"cat_name":"电源7",
+					"cat_pid":1,
+					"cat_level":1,
+					"cat_deleted":false,
+					"cat_icon":"",
+					"children":[
+						{
+							"cat_id":1,
+							"cat_name":"3层电7",
+							"cat_pid":1,
+							"cat_level":1,
+							"cat_deleted":false,
+							"cat_icon":"./static/images/m7.jpg"
+						}
+					]
+				}
+
+
+			]
+
+
+  
+  
+		  },
+		  {
+			"cat_id":1,
+			"cat_name":"大家电8",
+			"cat_pid":1,
+			"cat_level":1,
+			"cat_deleted":false,
+			"cat_icon":"",
+			"children":[
+				{
+					"cat_id":1,
+					"cat_name":"电源8",
+					"cat_pid":1,
+					"cat_level":1,
+					"cat_deleted":false,
+					"cat_icon":"",
+					"children":[
+						{
+							"cat_id":1,
+							"cat_name":"3层电8",
+							"cat_pid":1,
+							"cat_level":1,
+							"cat_deleted":false,
+							"cat_icon":"./static/images/m8.jpg"
+						}
+					]
+				}
+
+
+			]
+
+
+  
+  
+		  },
+		  {
+			"cat_id":1,
+			"cat_name":"大家电5",
+			"cat_pid":1,
+			"cat_level":1,
+			"cat_deleted":false,
+			"cat_icon":"",
+			"children":[
+				{
+					"cat_id":1,
+					"cat_name":"电源5",
+					"cat_pid":1,
+					"cat_level":1,
+					"cat_deleted":false,
+					"cat_icon":"",
+					"children":[
+						{
+							"cat_id":1,
+							"cat_name":"层电5",
+							"cat_pid":1,
+							"cat_level":1,
+							"cat_deleted":false,
+							"cat_icon":"./static/images/m5.jpg"
+						}
+					]
+				}
+
+
+			]
+
+
+  
+  
+		  },
+		  {
+			"cat_id":1,
+			"cat_name":"大家电",
+			"cat_pid":1,
+			"cat_level":1,
+			"cat_deleted":false,
+			"cat_icon":"",
+			"children":[
+				{
+					"cat_id":1,
+					"cat_name":"电源1",
+					"cat_pid":1,
+					"cat_level":1,
+					"cat_deleted":false,
+					"cat_icon":"",
+					"children":[
+						{
+							"cat_id":1,
+							"cat_name":"3层电sss",
+							"cat_pid":1,
+							"cat_level":1,
+							"cat_deleted":false,
+							"cat_icon":"./static/images/m1.jpg"
+						}
+					]
+				}
+
+
+			]
+
+
+  
+  
+		  },
+		  {
+			"cat_id":1,
+			"cat_name":"食品",
+			"cat_pid":1,
+			"cat_level":1,
+			"cat_deleted":false,
+			"cat_icon":"",
+			"children":[
+				{
+					"cat_id":1,
+					"cat_name":"食品",
+					"cat_pid":1,
+					"cat_level":1,
+					"cat_deleted":false,
+					"cat_icon":"",
+					"children":[
+						{
+											"cat_id":1,
+							"cat_name":"3食品",
+							"cat_pid":1,
+							"cat_level":1,
+							"cat_deleted":false,
+							"cat_icon":"./static/images/m2.jpg"
+						}
+					]
+				}
+				
+
+
+			]
+
+
+  
+  
+		  }
+		]
+
+	}

@@ -1,0 +1,2 @@
+npm i -g supervisor  //setup--自己刷新
+ supervisor hello.js XXXX启动

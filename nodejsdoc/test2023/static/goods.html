@@ -1,0 +1,224 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div id=content>
+  	<!-- 网页--360搜索-- 可以直接用 -->
+    <div>
+      <!-- <form id="search-form" target="_blank" action="https://www.baidu.com/"><div class="others-params webpage-so360 -->
+      <form id="search-form" target="_blank" action="http://127.0.0.1:8000/goods/?cag=1%20&page=1/">
+        <div class="" style="display:none"><input type="hidden" name="ie" value="utf-8"><input type="hidden" name="src"
+            value=""><input type="hidden" name="shb" value="1"><input type="hidden" name="hsid"
+            value=""></div>
+        <div class="others-params webpage-somulti types-webpage" style="display:none">
+          <input type="hidden" name="ie" value="utf-8" disabled="">
+          <input type="hidden" name="src" value="hao_search_cube" disabled="">
+          <input type="hidden" name="shb" value="1" disabled="">
+          <input type="hidden" name="hsid" value="fa31b1042a564eb8" id="search-hsid" disabled="">
+        </div>
+        <fieldset>
+          <!-- <legend>综合搜索</legend> -->
+          <div class="search-switchtab">
+            <!-- <p class="oncate">网页--360搜索-- 可以直接用</p> -->
+          </div>
+          <!-- <div id="search-input" > -->
+          <div class="chaxun">
+
+            <input class="chaxun_neirong" type="text" name="q" autocomplete="off" id="search-kw"
+              qsuginited="1" placeholder="请输入查询:">
+            <!-- <div id="search-new-hotword-count" style="display: none;"></div> -->
+            <!-- <div id="search-hotword" class="g-toggle" onselectstart="return false;"></div> -->
+            <button class="chaxun_anniu" type="submit">..搜 一 下 .....</button>
+          </div>
+
+        </fieldset>
+      </form>
+      <style type="text/css">
+        .chaxun {
+          justify-content: center;
+          display: flex;
+          width: 80%;
+          background-color: #c0c8f8;
+          padding: 1px;
+          box-sizing: border-box;
+          height: 30px;
+          margin-top: 13px;
+        }
+
+        .chaxun_neirong {
+          flex-grow: 1;
+          border-radius: 5px 0 0 5px;
+          border: 1px solid #156dbd;
+          border-right: 0;
+        }
+
+        .chaxun_anniu {
+
+          border: 1px solid #156dbd;
+          height: 30px;
+
+          border-left: 0;
+          padding: 1px;
+          border-radius: 0 5px 5px 0;
+
+        }
+      </style>
+
+    </div>
+
+
+
+  <!-- ----------Search------------------------？ -->
+  <div>
+
+<!-- 
+    <form class="form-inline mt-2 mt-md-0">
+
+        <input class="form-control mr-sm-2" type="text" name="q" value="{{search_data}}"
+            placeholder="Search for..." aria-label="Search">
+       ### <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> 
+        <span>
+            <button type="submit">
+                <span>gogo</span>
+            </button>
+        </span>
+    </form> -->
+
+
+</div>
+
+  <style>
+    img {width: 130px;height: 100px;}
+  </style>
+  <div>
+    
+    <!-- <h1>for cag in categories分类</h1> -->
+    <!-- <span>详情页</span> -->
+    <ul class="subnav"  style="display: flex;flex-wrap:wrap;justify-content:center;align-content:flex-start;margin-left:auto;margin-right:auto;">
+      {% for cag in categories %}
+      <!-- <a href="/?cag={{cag.id}} &amp;page=1" -->
+
+      <li> <a href="/goods/?cag={{cag.id}} &amp;page=1" class="cag.cag_css">{{cag.cag_name}}
+          <!-- <img src="/static/{{cag.cag_img}}" style="display: flex;margin-left: 20px; width: 90px;height: 80px;  border-radius: 25px 20px 20px 25px;
+        border: 1px solid#aaac99;">  -->
+        </a> </li>
+
+      {% endfor %}
+    </ul>
+  </div>
+  
+<hr>
+  <div class="breadcrumb">
+    <a href="#">当前的分类</a>
+    <span></span>
+    <a href="#">{{ current_cag.cag_name }}</a>
+
+  </div>
+
+  <div class="main_wrap clearfix">
+      <div class="sort_bar"></div>
+  
+    <ul class="goods_type_list clearfix" style="display: flex;flex-direction: row;flex-wrap: wrap;">
+      <!-- style="display: flex;flex-direction: row;flex-wrap: wrap;" 横排-->
+      {% for goods in page_data %}
+      <!-- page_data 是关键 -->
+      <li>
+        <style>
+          h4{
+            margin-bottom:-55px ;
+          }
+        </style>
+          <a></a>
+          <div class="operate">
+            <style>
+              /* span换行 */
+              
+            span {
+            display: inline-block;
+            width: 90px;
+            word-break: break-all;
+            white-space: normal;
+        }
+              
+                          </style>
+            <a href="/detail/?id={{goods.id }}">
+              <img src="/static/goods/{{goods.goods_img }}" style="border-radius: 6px 6px 6px 6px;margin: 0px 15px;">
+              <!-- style="width:100px; height: 100px;" -->
+            </a>
+
+             
+           
+           
+            <h4> 
+
+              <style>
+                .goods_name{
+                  
+    /* font-style: normal;
+    /*缩进*/
+    /* text-indent: 0px; */
+  
+    /* font-size: x-large;  */
+    /*加初*/
+    font-weight: bold;
+    font-family: '隶书';
+    margin-left: 35px;
+    text-align: center;
+    /*垂直居中*/
+    vertical-align: middle;
+    line-height: 60px;
+    background-color: #F5F5F5;
+    height: 30px;
+    /*字体装饰*/
+    text-decoration: underline green;
+                }
+              </style>
+              <a  class="goods_name" href="/detail/?id={{goods.id }}">{{ goods.goods_name}}</a></h4>
+              <!-- <div> <a class="goods_name" href="/detail/?id={{goods.id }}"><span>{{ goods.goods_desc}}</span></a></div> -->
+          <!-- <div> <span class="prize"><a href="/detail/?id={{goods.id }}"> ¥{{goods.goods_price}}</a><br> </span> </div>  ##价格关闭-->
+            <hr>
+           
+          </div>
+      </li>
+      {% endfor %}
+    </ul>
+   
+    <div class="pagenation">
+      {% if page_data.has_previous %}
+
+      <a href="?cag={{cag_id}} &amp;page={{ page_data.previous_page_number}}">上一页</a>
+      {% endif %}
+
+
+      {% for index in paginator.page_range %}
+
+      {% if page_data.number == index %}
+
+      <a href="?cag={{cag_id}} &amp;page={{ index }}" class="active">{{ index }}</a>
+      {% else %}
+      <!-- <a href="?cag={{cag_id}} 不是cag.id 问题出在这里，害死baobao le -->
+      <a href="?cag={{cag_id}} &amp;page={{ index }}">{{ index }}</a>
+
+
+      {% endif %}
+
+      {% endfor %}
+
+
+      {% if page_data.has_next %}
+      <a href="?cag={{cag_id}} &amp;page={{ page_data.next_page_number}}">下一页</a>
+
+
+      {% endif %}
+      
+    </div>
+
+
+  </div>
+  {% block footjs %}
+  <div>
+    <!-- <P>这儿也可以插 如foots</P> -->
+  </div>
+  {% endblock %}
+
+</div>
+{% endblock %}

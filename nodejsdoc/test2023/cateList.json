@@ -1,0 +1,139 @@
+        
+          {"message":[
+
+          {
+            "cat_id": 1,
+            "cat_name": "分类1家电",
+            "cat-pid": 1,
+            "cat-level": 1,
+            "cat-deleted": false,
+            "cat-icon": "",
+            "children": [{
+              "cat_id": 1,
+              "cat_name": "二类电视",
+              "cat-pid": 1,
+              "cat-level": 1,
+              "cat-deleted": false,
+              "cat-icon": "",
+              "children": [{
+                "cat_id": 1,
+                "cat_name": "三类dd",
+                "cat-pid": 1,
+                "cat-level": 2,
+                "cat-deleted": false,
+                "cat-icon": "https://pic5.40017.cn/03/000/d5/6b/rB5oQFx4846ATjD9AAMGEUvrZHQ915_520x218_00.jpg"
+
+              }]
+            }]
+          },
+
+          {
+            "cat_id": 2,
+            "cat_name": "分类2",
+            "cat-pid": 2,
+            "cat-level": 2,
+            "cat-deleted": false,
+            "cat-icon": "",
+            "children": [{
+              "cat_id": 2,
+              "cat_name": "二类电视",
+              "cat-pid": 2,
+              "cat-level": 2,
+              "cat-deleted": false,
+              "cat-icon": "",
+              "children": [{
+                "cat_id": 2,
+                "cat_name": "三类dd",
+                "cat-pid": 2,
+                "cat-level": 2,
+                "cat-deleted": false,
+                "cat-icon": "https://pic5.40017.cn/03/000/d5/6b/rB5oQFx4846ATjD9AAMGEUvrZHQ915_520x218_00.jpg"
+
+              }]
+            } ]
+          },
+
+          {
+            "cat_id": 3,
+            "cat_name": "分类3",
+            "cat-pid": 3,
+            "cat-level": 3,
+            "cat-deleted": false,
+            "cat-icon": "",
+            "children": [{
+              "cat_id": 3,
+              "cat_name": "二类电视",
+              "cat-pid": 3,
+              "cat-level": 3,
+              "cat-deleted": false,
+              "cat-icon": "",
+              "children": [{
+                "cat_id": 3,
+                "cat_name": "三类dd",
+                "cat-pid": 3,
+                "cat-level": 3,
+                "cat-deleted": false,
+                "cat-icon": "https://pic5.40017.cn/03/000/d5/6b/rB5oQFx4846ATjD9AAMGEUvrZHQ915_520x218_00.jpg"
+
+              }]
+            } ]
+          },
+
+          {
+            "cat_id": 4,
+            "cat_name": "分类4",
+            "cat-pid": 4,
+            "cat-level": 4,
+            "cat-deleted": false,
+            "cat-icon": "",
+            "children": [{
+              "cat_id": 4,
+              "cat_name": "二类电视",
+              "cat-pid": 4,
+              "cat-level": 4,
+              "cat-deleted": false,
+              "cat-icon": "",
+              "children": [{
+                "cat_id": 4,
+                "cat_name": "三类dd",
+                "cat-pid": 4,
+                "cat-level": 4,
+                "cat-deleted": false,
+                "cat-icon": "https://pic5.40017.cn/03/000/d5/6b/rB5oQFx4846ATjD9AAMGEUvrZHQ915_520x218_00.jpg"
+
+              }]
+            }]
+          },
+
+
+
+          {
+            "cat_id": 5,
+            "cat_name": "分类5",
+            "cat-pid": 5,
+            "cat-level": 5,
+            "cat-deleted": false,
+            "cat-icon": "",
+            "children": [{
+              "cat_id": 5,
+              "cat_name": "二类电视",
+              "cat-pid": 5,
+              "cat-level": 5,
+              "cat-deleted": false,
+              "cat-icon": "",
+              "children": [{
+                "cat_id": 5,
+                "cat_name": "三类dd",
+                "cat-pid": 5,
+                "cat-level": 5,
+                "cat-deleted": false,
+                "cat-icon": "https://pic5.40017.cn/03/000/d5/6b/rB5oQFx4846ATjD9AAMGEUvrZHQ915_520x218_00.jpg"
+
+              }]
+            }]
+          }
+        ]
+       }
+       
+        
+        
