@@ -1,0 +1,17 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<ul>
+	<%for(let i=0;i<newsList.length;i++){%>
+	<li><%=newsList[i].title%></li>
+	<%}%>
+</ul>
+<%- include('footer.html') %>
+
+</body>
+</html>
